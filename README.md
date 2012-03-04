@@ -9,9 +9,9 @@ I'm quite interested in the **"Meta"** aspect of programming environnement, the 
 
 And I found with [Node.JS][1] a **really prolific activity** around the development of such **abstracting layers** (I described below) that **I never found before** in any other programming environnement.
 
-Pushed by the **HTML5 wave**, javascript development ( ECMAScript 5 ) and community is becoming **really active and exciting** : [Kinect interfacing, Face recognition](http://t.co/rHHoKEUm), [Drone control](http://t.co/ePzJAFa7), [p2p Webcam Streaming](http://vimeo.com/36229857), [3D](http://idflood.github.com/ThreeNodes.js/public/index.html#example/spreads1.json) / [Physics engine](http://learningthreejs.com/blog/2011/12/19/particles-online-editor-for-sparks-js/), IDE, etc...
+Pushed by the **HTML5 wave**, javascript development ( ECMAScript 5 ) and community is becoming **really active and exciting** : [Kinect interfacing, Face recognition](http://www.nodejs-news.com/fun-with-nodejs/face-recognition-with-nodejs/), [Drone control](http://t.co/ePzJAFa7), [p2p Webcam Streaming](http://vimeo.com/36229857), [3D data flow editor](http://idflood.github.com/ThreeNodes.js/public/index.html#example/spreads1.json) / [Physics engine](http://soulwire.co.uk/coffeephysics/), IDE, etc...
 
-Below some problematic I have to push forward programming limitations and really good Libraries that illustrate that find nice solutions using [Node.js][1] and/or [CoffeeScript][2] :
+Below are some problematic to push forward programming limitations and really good Libraries that illustrate how to find a nice solutions using [Node.js][1] and/or [CoffeeScript][2] :
 
 ## How enabling you to create your own semantic programming language : DSL (Domain Specific Language) ? ##
 
@@ -37,7 +37,7 @@ logFunc = (args...) -> console.log args...
 ```
 
 
-#### **[CoffeeKup](http://coffeekup.org/)** an HTML DSL over [CoffeeScript][2] as a template engine ( used in [Zappa below](#zappa) ) ####
+#### **[CoffeeKup](http://coffeekup.org/)** is an HTML DSL over [CoffeeScript][2] as a template engine ( used in [Zappa below](#zappa) ) ####
 
 Writing your **template in [CoffeeScript][2]**, your HTML is becoming less verbose, and block more evident
 
@@ -147,7 +147,7 @@ Node.js use the **async** programming paradigm, like Javascript in the Browser. 
 
 I came to node.js seeing my Javascript Semantic Web library on Browser side (using HTTP [SPARQL](http://en.wikipedia.org/wiki/SPARQL) Query) taking 10x less time to load a graph by recursive loading that the ruby ORM : [Spira](http://blog.datagraph.org/2010/05/spira) I was using on [ruby](http://www.ruby-lang.org/) backend server
 
-ruby as a solution to **write asynchronous code synchronously** it has introduced [Fibers](http://www.igvita.com/2009/05/13/fibers-cooperative-scheduling-in-ruby/) in v1.9, which had an implementation on Node.js using [node-fibers](https://github.com/laverdet/node-fibers).
+ruby had a solution to **write asynchronous code synchronously** it has introduced [Fibers](http://www.igvita.com/2009/05/13/fibers-cooperative-scheduling-in-ruby/) in v1.9, which had an implementation on Node.js using [node-fibers](https://github.com/laverdet/node-fibers).
 But it is not working on browser side ... unless you discover an other wonderfull lib [Streamline.js](https://github.com/Sage/streamlinejs)
 
 **[Streamline.js](https://github.com/Sage/streamlinejs)** is *Asynchronous Javascript for dummies*, you write your code using the "_" (underscore) as callback and chain your operations, replacing this : 
