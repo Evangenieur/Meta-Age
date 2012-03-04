@@ -9,7 +9,7 @@ I'm quite interested in the **"Meta"** aspect of programming environnement, the 
 
 And I found with [Node.JS][1] a **really prolific activity** around the development of such **abstracting layers** (I described below) that **I never found before** in any other programming environnement.
 
-Pushed by the **HTML5 wave**, javascript development ( ECMAScript 5 ) and community is becoming **really active and exciting** : Kinect interfacing, Face recognition, Drone control, Webcam Streaming, 3D / Physics engine, IDE, etc...
+Pushed by the **HTML5 wave**, javascript development ( ECMAScript 5 ) and community is becoming **really active and exciting** : [Kinect interfacing, Face recognition](http://t.co/rHHoKEUm), [Drone control](http://t.co/ePzJAFa7), [p2p Webcam Streaming](http://vimeo.com/36229857), [3D](http://idflood.github.com/ThreeNodes.js/public/index.html#example/spreads1.json) / [Physics engine](http://learningthreejs.com/blog/2011/12/19/particles-online-editor-for-sparks-js/), IDE, etc...
 
 Below some problematic I have to push forward programming limitations and really good Libraries that illustrate that find nice solutions using [Node.js][1] and/or [CoffeeScript][2] :
 
@@ -22,18 +22,18 @@ Javascript compilation can be executed on runtime in both client ( browser ) and
 **Bored by syntax** like Javascript :
 
 ```javascript
-    var logFunc;
-    logFunc = function() {
-      var args;
-      args = 1 <= arguments.length ? Array.prototype.slice.call(arguments, 0) : [];
-      return console.log.apply(console, args);
-    };
+var logFunc;
+logFunc = function() {
+  var args;
+  args = 1 <= arguments.length ? Array.prototype.slice.call(arguments, 0) : [];
+  return console.log.apply(console, args);
+};
 ```
 
 **A nice alternative** [CoffeeScript][2] :
 
 ```coffeescript
-    logFunc = (args...) -> console.log args...
+logFunc = (args...) -> console.log args...
 ```
 
 
@@ -78,64 +78,64 @@ Writing your **template in [CoffeeScript][2]**, your HTML is becoming less verbo
   * Client [CoffeeScript][2] code
 
 ```coffeescript
-        # Will be compiled and served as static Javascript
-        @client '/index.js': ->
-            #Client Scope
-            alert "I'm at : #{window.location.href}"
+# Will be compiled and served as static Javascript
+@client '/index.js': ->
+    #Client Scope
+    alert "I'm at : #{window.location.href}"
 ```
 
 
   * HTML Server Templating with [CoffeeKup](http://coffeekup.org/) /  [CoffeeScript][2]
 
 ```coffeescript
-        # Server HTTP Routes
-        @get '/': ->
-           @render 'index', 
-               title: "Hello"
-               myContainerContent: "World!"
-        # View rendered by default template engine CoffeeKup
-        @view 'index': ->
-           h1 @title
-           div '.myContainer', ->
-              @myContainerContent
+# Server HTTP Routes
+@get '/': ->
+   @render 'index', 
+       title: "Hello"
+       myContainerContent: "World!"
+# View rendered by default template engine CoffeeKup
+@view 'index': ->
+   h1 @title
+   div '.myContainer', ->
+      @myContainerContent
 ```
 
 
   * "Universal WebSocket" client / server communication using [Socket.io](http://socket.io/)
 
 ```coffeescript
-        #Server Scope events receiver
-        @on 
-           connection: ->
-             @emit welcome: "client"
-           "welcome.back": -> console.log 'welcome ack'
-        @client '/index.js': ->
-          # Client Scope
-          # Socket Connection
-          @connect()
-          # Client event receiver
-          @on welcome: (me) ->
-            alert 'server say welcome to #{me} !'
-            @emit 'welcome.back'
+#Server Scope events receiver
+@on 
+   connection: ->
+     @emit welcome: "client"
+   "welcome.back": -> console.log 'welcome ack'
+@client '/index.js': ->
+  # Client Scope
+  # Socket Connection
+  @connect()
+  # Client event receiver
+  @on welcome: (me) ->
+    alert 'server say welcome to #{me} !'
+    @emit 'welcome.back'
 ```
 
   * Client routing with [Sammy.js](http://sammyjs.org/)
 
 ```coffeescript
-        @client '/index.js': ->
-          # Client Hash Route
-          @get '#/route': -> alert 'client routes!'
+@client '/index.js': ->
+  # Client Hash Route
+  @get '#/route': -> alert 'client routes!'
 ```
 
 
   * Shared Client / Server [CoffeeScript][2] code
 
 ```coffeescript
-        # Code will be executed on server and served as static javascript for browser, nice for creating a bootlooader
-        @shared '/shared.js': ->
-           root = window ? global
-           alert if window? then "I'm in the Browser" else "I'm in node"
-           root.sum = (x, y) -> x + y
+# Code will be executed on server and served as static javascript for browser, nice for creating a bootlooader
+@shared '/shared.js': ->
+   root = window ? global
+   alert if window? then "I'm in the Browser" else "I'm in node"
+   root.sum = (x, y) -> x + y
 ```
 
   It is a really nice way to wrap main libs clearly, see the [Zappa.coffee annotated source](http://zappajs.org/docs/zappa.html)
@@ -153,19 +153,19 @@ But it is not working on browser side ... unless you discover an other wonderful
 **[Streamline.js](https://github.com/Sage/streamlinejs)** is *Asynchronous Javascript for dummies*, you write your code using the "_" (underscore) as callback and chain your operations, replacing this : 
 
 ```coffeescript
-    lineCount = (path, callback) ->
-      fs.readFile(path, "utf8", (err, data) ->
-        if err
-          callback err
-          return
-        callback null, data.split('\n').length
+lineCount = (path, callback) ->
+  fs.readFile(path, "utf8", (err, data) ->
+    if err
+      callback err
+      return
+    callback null, data.split('\n').length
 ```
 
 by this : 
 
 ```coffeescript
-    lineCount = (path, _) ->
-      fs.readFile(path, "utf8", _).split('\n').length
+lineCount = (path, _) ->
+  fs.readFile(path, "utf8", _).split('\n').length
 ```
 
 The code will run with node-fibers in Node.js or generated to javascript asynchronous code, see the [Streamline.js Code Generator](http://sage.github.com/streamlinejs/examples/streamlineMe/streamlineMe.html)
@@ -177,16 +177,16 @@ By breaking communication barriers, with a distributed evented network
 #### **[Hook.io](https://github.com/hookio/hook.io)** a distributed EventEmitter network  ####
 
 ```coffeescript
-    hookA = new Hook name: "a"
-    hookB  = new Hook name: "b"
-    
-    hookA.on "*::sup", (data) ->
-       console.log "#{@event} #{data}"
-    hookB.on "hook::ready", ->
-      hookB.emit "sup", "dog"
-    
-    hookA.start()
-    hookB.start()
+hookA = new Hook name: "a"
+hookB  = new Hook name: "b"
+
+hookA.on "*::sup", (data) ->
+   console.log "#{@event} #{data}"
+hookB.on "hook::ready", ->
+  hookB.emit "sup", "dog"
+
+hookA.start()
+hookB.start()
 ```
 
 By decoupling components and building a network architecture on top like in [flow based programming](http://en.wikipedia.org/wiki/Flow-based_programming)
@@ -205,17 +205,17 @@ A File count line network definition in FBP
 I have writted a small wrapper around this lib enabling you to create component like this : 
 
 ```coffeescript
-    Tweet = (data_in, out_url, out_message) ->
-      if data_in().entities?.urls?
-        for url in data_in().entities.urls
-          out_url.send url.expanded_url 
-      out.message.send data_in().text 
+Tweet = (data_in, out_url, out_message) ->
+  if data_in().entities?.urls?
+    for url in data_in().entities.urls
+      out_url.send url.expanded_url 
+  out.message.send data_in().text 
 ```
 
  
 ## How to code in a meta environnement ##
 
-Usually the more important tool for a developer is the IDE ( distributed vim :) ), for this Javascript / Node.JS are really pushing step forward, as the browser is becoming your working environement with project like :
+Usually the more important tool for a developer is the IDE ( distributed vim :) ), for this Javascript / Node.JS is pushing your working environement in the browser with project like :
 
 #### **[Cloud9](http://c9.io)** a Web RAD IDE with Node.js cloud plugged environement ####
 
