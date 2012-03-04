@@ -138,7 +138,7 @@ Writing your **template in [CoffeeScript][2]**, your HTML is becoming less verbo
    root.sum = (x, y) -> x + y
 ```
 
-  It is a really nice way to wrap main libs clearly, see the [Zappa.coffee annotated source](http://zappajs.org/docs/zappa.html)
+  It is a really nice way to wrap main libs clearly, see the [Zappa.coffee annotated source](http://zappajs.org/docs/zappa.html) and hack it ;)
 
 
 
@@ -168,7 +168,7 @@ lineCount = (path, _) ->
   fs.readFile(path, "utf8", _).split('\n').length
 ```
 
-The code will run with node-fibers in Node.js or generated to javascript asynchronous code, see the [Streamline.js Code Generator](http://sage.github.com/streamlinejs/examples/streamlineMe/streamlineMe.html)
+The code could run with node-fibers in Node.js or generated to javascript asynchronous code, see the [Streamline.js Code Generator](http://sage.github.com/streamlinejs/examples/streamlineMe/streamlineMe.html)
 
 ## How to create meta architecture ##
 
@@ -221,14 +221,15 @@ Usually the more important tool for a developer is the IDE ( distributed vim :) 
 
 #### **[JSFiddle](http://jsfiddle.net/evangenieur/9MfNt/)** a Web IDE for Client code prototyping / testing libs ####
 
+#### **[CoffeeXP](http://evangenieur.com/coffeexp)** a CoffeeScript live coding experiments ####
+
+Hosting is neither a problem with cloud hosting service / techno
 
 #### **[Nodester](http://nodester.com/)** an Open source cloud hosting / Node.js ####
 
 #### **[Nodejitsu](http://nodejitsu.com/)** scalable Node.js clouds ####
 
-#### **[CoffeeXP](http://evangenieur.com/coffeexp)** a CoffeeScript live coding experiments ####
-
-So my dream of a Live Stream Coding Social Cloud, has been pushed some steps forward :)
+So my dream of a Live Stream Social Coding Cloud, has been pushed some steps forward :)
 
 
 [1]: http://nodejs.org/
