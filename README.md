@@ -21,22 +21,27 @@ Javascript compilation can be executed on runtime in both client ( browser ) and
 
 **Bored by syntax** like Javascript :
 
+```javascript
     var logFunc;
     logFunc = function() {
       var args;
       args = 1 <= arguments.length ? Array.prototype.slice.call(arguments, 0) : [];
       return console.log.apply(console, args);
     };
+```
 
 **A nice alternative** [CoffeeScript][2] :
 
+```coffeescript
     logFunc = (args...) -> console.log args...
+```
 
 
 #### **[CoffeeKup](http://coffeekup.org/)** an HTML DSL over [CoffeeScript][2] as a template engine ( used in [Zappa below](#zappa) ) ####
 
 Writing your **template in [CoffeeScript][2]**, your HTML is becoming less verbose, and block more evident
 
+```coffeescript
     html ->
       head ->
       body ->
@@ -45,9 +50,11 @@ Writing your **template in [CoffeeScript][2]**, your HTML is becoming less verbo
            span style: "font-weight: bold", 
              "Content"
            text " of my Div"
+```
 
 **Generated HTML** :
 
+```html
     <html>
       <head>
       </head>
@@ -58,6 +65,7 @@ Writing your **template in [CoffeeScript][2]**, your HTML is becoming less verbo
      of my Div    </div>
       </body>
     </html>
+```
 
  
 
@@ -69,14 +77,17 @@ Writing your **template in [CoffeeScript][2]**, your HTML is becoming less verbo
 
   * Client [CoffeeScript][2] code
 
+```coffeescript
         # Will be compiled and served as static Javascript
         @client '/index.js': ->
             #Client Scope
             alert "I'm at : #{window.location.href}"
+```
 
 
   * HTML Server Templating with [CoffeeKup](http://coffeekup.org/) /  [CoffeeScript][2]
 
+```coffeescript
         # Server HTTP Routes
         @get '/': ->
            @render 'index', 
@@ -87,10 +98,12 @@ Writing your **template in [CoffeeScript][2]**, your HTML is becoming less verbo
            h1 @title
            div '.myContainer', ->
               @myContainerContent
+```
 
 
   * "Universal WebSocket" client / server communication using [Socket.io](http://socket.io/)
 
+```coffeescript
         #Server Scope events receiver
         @on 
            connection: ->
@@ -104,21 +117,26 @@ Writing your **template in [CoffeeScript][2]**, your HTML is becoming less verbo
           @on welcome: (me) ->
             alert 'server say welcome to #{me} !'
             @emit 'welcome.back'
+```
 
   * Client routing with [Sammy.js](http://sammyjs.org/)
 
+```coffeescript
         @client '/index.js': ->
           # Client Hash Route
           @get '#/route': -> alert 'client routes!'
+```
 
 
   * Shared Client / Server [CoffeeScript][2] code
 
+```coffeescript
         # Code will be executed on server and served as static javascript for browser, nice for creating a bootlooader
         @shared '/shared.js': ->
            root = window ? global
            alert if window? then "I'm in the Browser" else "I'm in node"
            root.sum = (x, y) -> x + y
+```
 
   It is a really nice way to wrap main libs clearly, see the [Zappa.coffee annotated source](http://zappajs.org/docs/zappa.html)
 
@@ -134,17 +152,21 @@ But it is not working on browser side ... unless you discover an other wonderful
 
 **[Streamline.js](https://github.com/Sage/streamlinejs)** is *Asynchronous Javascript for dummies*, you write your code using the "_" (underscore) as callback and chain your operations, replacing this : 
 
+```coffeescript
     lineCount = (path, callback) ->
       fs.readFile(path, "utf8", (err, data) ->
         if err
           callback err
           return
         callback null, data.split('\n').length
+```
 
 by this : 
 
+```coffeescript
     lineCount = (path, _) ->
       fs.readFile(path, "utf8", _).split('\n').length
+```
 
 The code will run with node-fibers in Node.js or generated to javascript asynchronous code, see the [Streamline.js Code Generator](http://sage.github.com/streamlinejs/examples/streamlineMe/streamlineMe.html)
 
@@ -154,6 +176,7 @@ By breaking communication barriers, with a distributed evented network
 
 #### **[Hook.io](https://github.com/hookio/hook.io)** a distributed EventEmitter network  ####
 
+```coffeescript
     hookA = new Hook name: "a"
     hookB  = new Hook name: "b"
     
@@ -164,6 +187,7 @@ By breaking communication barriers, with a distributed evented network
     
     hookA.start()
     hookB.start()
+```
 
 By decoupling components and building a network architecture on top like in [flow based programming](http://en.wikipedia.org/wiki/Flow-based_programming)
 
@@ -180,11 +204,13 @@ A File count line network definition in FBP
 
 I have writted a small wrapper around this lib enabling you to create component like this : 
 
+```coffeescript
     Tweet = (data_in, out_url, out_message) ->
       if data_in().entities?.urls?
         for url in data_in().entities.urls
           out_url.send url.expanded_url 
       out.message.send data_in().text 
+```
 
  
 ## How to code in a meta environnement ##
