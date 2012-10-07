@@ -1,12 +1,20 @@
+
+![Evolving World](http://www.lenovo.com/social_responsibility/us/en/images/Environment--commitment_268x355.jpg)
+
 # Open Innovation
 
-### Creating and Handling MetaStability of the Web
+### Creating and Handling MetaStability of the Web with our relational computing environment
+
+[Web Evolution Timeline](http://visual.ly/evolution-web?view=true)
+![Web Evolution](http://www.howinteractivedesign.com/wp-content/uploads/web-evolution-timeline.jpg)
 
 As we are more interconnected to our world, things are going faster form birth to death.  
 But to survive those things on their environment have to create more and more interconnections.  
 When they die, all those interconnections just disappear.   
 Affecting each linked things that are by someway dependent.  
-Internet is growing faster and faster each day on a "multitude" of dimensions ( Web Of (Services|Clouds|Things|Data|Semantic|Mobility|Sensor|Humans|Bots) )
+Internet is growing faster and faster each day on a "multitude" of dimensions - Web Of (Services|Clouds|Things|Data|Semantic|Mobility|Sensor|Humans|Bots) -
+
+![Intelligence in the connections](http://www.urenio.org/wp-content/uploads/2011/11/Semantic-Web.jpg)
 
 So to get the rest of the story about our [WebR?(e|E)volution](http://bit.ly/QMXvxd) we have to create new tools to enhance :
 
@@ -35,7 +43,7 @@ So to get the rest of the story about our [WebR?(e|E)volution](http://bit.ly/QMX
 
   > All things created by others should be pluggable now to experiment in few minutes.
 
-* __MetaFactorisation__ : 
+* __MetaFactory__*sation* : 
 
   > don't rely on things as they are at this moment
 
@@ -62,7 +70,7 @@ Published_on :
 * [Scribble][2]
 * [/dev/null](file:///dev/null/once_upon_a_time)
 
-_**#OpenIdea** lost_ by the lack of synchro between tools : [Unknown](#lost_idea#about(10%))
+_**#OpenIdea** lost_ by the lack of synchro between tools : [Unknown #lost_idea#about=10%](#lost_idea#about=10%)
 
 Links :
 [1]: http://mbleigh.github.com/marky/#/p/WebMetaStability
