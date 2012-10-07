@@ -10,27 +10,33 @@ Internet is growing faster and faster each day on a "multitude" of dimensions ( 
 
 So to get the rest of the story about our [WebR?(e|E)volution](http://bit.ly/QMXvxd) we have to create new tools to enhance :
 
-* __Collaboration__ : Working alone is a really poor efficiency in our world where even lonely wolves could work on massively interconnected projects / games
+* __Collaboration__ : Working alone is a really poor efficiency in our world 
 
-* __Openness__ : the value doesn't come from virtual things (data|video|blog) you created but comes from their links in their existence
+  > Even lonely wolves could work on massively interconnected projects / games
+
+* __Openness__ : the value doesn't come from virtual things (data|video|blog) you created
+  
+  > Value comes from their links in their existence
 
 * __Productivity__ : don't do things that a computer could do.
  
-  >  (e.g. : copy / paste doesn't have to copy data once, but to create a known link between nodes to stream not the data but data URI as ID )
+  >  e.g. : pre-web _**copy / paste** concept_ doesn't have to copy data once, but to create a known link between nodes to stream not the data but data URI as ID 
 
 * __Efficiency__ : extract revelant information, easy to create valuable data
 
-  > from all your data flow (Mail, Twitter, Facebook) and make you aware of the importance. use collective intelligence, semantic inferency, etc..
+  > Manage your data flow (Mail, Twitter, Facebook, Kids, Family, Car) and make you aware of the importance. use collective intelligence, semantic inferency, open architecture, etc..
 
 * __Resiliency__ : things could die without impacting you too severely
 
-  > you always have quick alternative if all your stack is fully open sources
+  > Things are born to die and to evolve, so keep in touch with his last known forked URI
+  > You always have quick alternative if all your stack is fully open sources
 
 * __Experimenting__ : Interconnecting all those things doesn't have to be painful.
 
   > All things created by others should be pluggable now to experiment in few minutes.
 
 * __MetaFactorisation__ : 
+
   > don't rely on things as they are at this moment
 
 ***
@@ -56,9 +62,9 @@ Published_on :
 * [Scribble][2]
 * [/dev/null](file:///dev/null/once_upon_a_time)
 
-_#OpenIdea_ lost by the lack of synchro between tools : [Unknown](#lost_idea#about(10%))
+_**#OpenIdea** lost_ by the lack of synchro between tools : [Unknown](#lost_idea#about(10%))
 
 Links :
-[1](http://mbleigh.github.com/marky/#/p/WebMetaStability)
-[2](http://www.tryscribble.com/wikis/open-innovation/pages/creating-and-handling-metastability-of-the-web)
+[1]: http://mbleigh.github.com/marky/#/p/WebMetaStability
+[2]: http://www.tryscribble.com/wikis/open-innovation/pages/creating-and-handling-metastability-of-the-web
 
