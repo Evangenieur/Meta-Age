@@ -1,6 +1,6 @@
 
 
-# Open Innovation ![Evolving World](http://www.lenovo.com/social_responsibility/us/en/images/Environment--commitment_268x355.jpg)
+# <img src="http://www.lenovo.com/social_responsibility/us/en/images/Environment--commitment_268x355.jpg" alt="Mutating World" style="max-height: 120px; vertical-align: middle;" /> Open Innovation 
 
 ### Creating and Handling MetaStability of the Web with our relational computing environment
 
