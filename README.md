@@ -1,10 +1,8 @@
+# <img src="http://www.lenovo.com/social_responsibility/us/en/images/Environment--commitment_268x355.jpg" alt="Mutating World" style="max-height: 120px; vertical-align: middle;" /> Open Innovation 
 
+### Creating and Handling MetaStability of the Web
 
-# <img src="http://www.lenovo.com/social_responsibility/us/en/images/Environment--commitment_268x355.jpg" alt="Mutating World" onload="alert('ok?');" style="max-height: 120px; vertical-align: middle;" /> Open Innovation 
-
-### Creating and Handling MetaStability of the Web with our relational computing environment
-
-[Web Evolution Timeline](http://visual.ly/evolution-web?view=true)
+[**Web Evolution Timeline**](http://visual.ly/evolution-web?view=true)
 ![Web Evolution](http://www.howinteractivedesign.com/wp-content/uploads/web-evolution-timeline.jpg)
 
 As we are more interconnected to our world, things are going faster form birth to death.  
@@ -17,13 +15,20 @@ Internet is growing faster and faster each day on a "multitude" of dimensions - 
 
 So to get the rest of the story about our [WebR?(e|E)volution](http://bit.ly/QMXvxd) we have to create new tools to enhance :
 
+* __Economy__ : Value doesn't come from virtual things (data|video|blog|software) you created
+
+  > Value comes from links made and how they are used in their existence
+  > e.g. : does he forked ?
+
+* __H?Openness__ : To create link, open your system
+  
+  > Links is about interaction, more your systems is open more it can evolve and create links
+
 * __Collaboration__ : Working alone is a really poor efficiency in our world 
 
   > Even lonely wolves could work on massively interconnected projects / games
 
-* __Openness__ : the value doesn't come from virtual things (data|video|blog) you created
-  
-  > Value comes from their links in their existence
+* __Education__ : give a secure environment and let child & people, be more collaborative, and create things together.
 
 * __Productivity__ : don't do things that a computer could do.
  
@@ -40,11 +45,46 @@ So to get the rest of the story about our [WebR?(e|E)volution](http://bit.ly/QMX
 
 * __Experimenting__ : Interconnecting all those things doesn't have to be painful.
 
-  > All things created by others should be pluggable now to experiment in few minutes.
+  > All things created by others should be pluggable now to experiment in few minutes.  
+  > e.g. :   
+  > - [Codepen.io](http://codepen.io/)
 
 * __MetaFactory__*sation* : 
 
   > don't rely on things as they are at this moment
+  > Build MetaTools to create MetaProducts and MetaContents
+
+
+### Architecture
+
+RealTime: JSON message passing based protocol  
+Data : referenced by URI  
+Network : URI as access Point
+
+#### __TheMatrix__
+
+#### __MetaNetwork__
+
+
+#### __MetaTool__
+
+Defintion : a process to build new tools using part of others
+
+
+#### __MetaStructure__
+
+Definition : a Network Overlay 
+
+#### __MetaContent__
+
+Definition : A Content build from part of lot of others contents ( video, audio, text, metadata)
+
+Music & Video are media made by few peoples to express things trough human emotion, in a few time, they can share their universes, but ours is composed by thousand of them, we need tools to aggregate, concatenate, assemble, distribute Meta Contents.
+
+* Video MetaData
+  [Popcorn.js](http://popcornjs.org/)
+
+
 
 ***
 ### ... to be continued ...
