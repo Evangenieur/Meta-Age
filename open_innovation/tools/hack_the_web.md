@@ -25,6 +25,41 @@ This will create a Multidimensional Augmented Web based on Human/Community point
 
 So let's **Hack the matrix**
 
+## Terminology 
+
+[**nickname**] : representing @individual, !group, (secret agency), /dev/null
+
+[**online**] : representing which is online on a LinkedSpace : nickname, resources, linkedSpaces
+
+[**resources**] : reprensenting ressources offered by [online]s [browser]'s and [node]'s
+
+[**linkedSpace**] : a Network of [online]s
+
+[**linkedObject**] : a Network of [Object]
+
+[**Object**] : a state [Component]
+[**Network**] : a Communicationnal [Component]
+[**Code**] : a Processing [Component]
+
+[**Component**]
+
+  * URI: reference identifier
+
+  * Revision: a tracking-number identifier of the timed state of the object in a given environment
+
+  * MetaData: data linked to the object for a given revision
+
+  * stream: 
+    input: 
+    ouput:
+    fullduplex:
+
+  * object: URI of himself ?
 
 
+### URI Mapping ###
 
+http://[**nickname**].hacktheweb.com : a Node, could be self-hosted by a community, anonymously stored in the cloud
+
+http://[**nickname**].hacktheweb.com/[**linkedSpace**]/
+http://
