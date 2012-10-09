@@ -38,7 +38,9 @@ So let's **Hack the matrix**
 [**linkedObject**] : a Network of [Object]
 
 [**Object**] : a state [Component]
+
 [**Network**] : a Communicationnal [Component]
+
 [**Code**] : a Processing [Component]
 
 [**Component**]
