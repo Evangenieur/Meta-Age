@@ -1,6 +1,7 @@
-#HackTheWeb
 
-The concept is to build automaticated **realtime pipes** through services even if they _do not expose API_.
+#HackTheWeb (Draft 0.01)
+
+The concept is to build automaticated **realtime pipes** through services even if they _do not expose API_, in the goal of **empowering people** to build the **next Web** together.
 
 Web is the most **interconnecting place**. it was build for that.  
 To be interconnected, you have to be **open**, value will come from the number of **links used** you have weaved.
@@ -29,13 +30,15 @@ So let's **Hack the matrix**
 
 [**nickname**] : representing @individual, !group, (secret agency), /dev/null
 
-[**online**] : representing which is online on a LinkedSpace : nickname, resources, linkedSpaces
+[**online**] : representing which is online on a LinkedSpace : nickname, resources, Hacklet, services
 
 [**resources**] : reprensenting ressources offered by [online]s [browser]'s and [node]'s
 
 [**linkedSpace**] : a Network of [online]s
 
 [**linkedObject**] : a Network of [Object]
+
+[**linkedCode**] : a Network of [Code]
 
 [**Object**] : a state [Component]
 
@@ -58,10 +61,21 @@ So let's **Hack the matrix**
 
   * object: URI of himself ?
 
+[**Hacklet**] :  a linkedSpace + linkedObject + linkedCode environement running on at leat a browser somerwhere on the internet, or thousands of nodes.
+
+
+
 
 ### URI Mapping ###
 
-http://[**nickname**].hacktheweb.com : a Node, could be self-hosted by a community, anonymously stored in the cloud
+http://[**nickname**].hacktheweb.com : a Node, could be self-hosted by a community or anonymously be in the cloud or the outer-cloud
 
 http://[**nickname**].hacktheweb.com/[**linkedSpace**]/
-http://
+
+http://[**nickname**].hacktheweb.com/[**linkedSpace**]/_object/[**Object**]
+
+http://[**nickname**].hacktheweb.com/[**linkedSpace**]/_online/[**online**]
+
+### Security ###
+
+Cloud : community accepted hacklet
