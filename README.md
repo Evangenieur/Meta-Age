@@ -1,7 +1,7 @@
 #Meta-Age
 
 ##The Meta Aspect of :
-* #OpenInnovation > [Metastability of The Web][metastability_of_the_web]
+* #OpenInnovation > [Tools for Handling and Creating the Metastability of The Web][metastability_of_the_web]
 * [Node.js][meta_aspect_node_js]
 
 ##Tools : 

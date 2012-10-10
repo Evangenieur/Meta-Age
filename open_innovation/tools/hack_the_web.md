@@ -61,7 +61,7 @@ So let's **Hack the matrix**
 
   * object: URI of himself ?
 
-[**Hacklet**] :  a linkedSpace + linkedObject + linkedCode environement running on at leat a browser somerwhere on the internet, or thousands of nodes.
+[**Hacklet**] :  a linkedSpace + linkedObject + linkedCode environement running on at least a browser somerwhere on the internet, or thousands of nodes.
 
 
 
